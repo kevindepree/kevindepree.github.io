@@ -174,3 +174,21 @@ main{
     width: 50%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  h1{
+    font-size: 14vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+  h3{
+    font-size: 18px;
+  }
+  #bio p{
+    font-size: 14px;
+  }
+  .carousel-cell{
+    margin-top: 25px;
+  }
+}
