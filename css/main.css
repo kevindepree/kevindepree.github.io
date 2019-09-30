@@ -7,7 +7,8 @@ header{
   background-image: url("../img/kevin_depree_studio.jpg");
   background-position: top;
   background-size: cover;
-  height: 75vh;
+  background-repeat: no-repeat;
+  min-height: 75vh;
   color: #fff000;
 }
 
@@ -35,13 +36,22 @@ header > *{
   margin-left: 50px;
 }
 
-header p{
+header h1, header h2, header p{
+  margin-right: 50px;
+}
+
+header h2{
+  font-weight: 800;
+}
+
+header h2, header p{
   margin-bottom: 50px;
 }
 
 header > div{
   position: relative;
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 #youtube{
@@ -57,7 +67,7 @@ header > div{
 header a{
   color: #fff000;
   text-decoration: none;
-  font-size: 33px;
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -156,7 +166,10 @@ main{
 
 @media screen and (max-width: 936px) {
   h2{
-    font-size: 26px;
+    font-size: 28px;
+  }
+  header h2{
+    font-size: 32px;
   }
   h3{
     font-size: 18px;
@@ -175,11 +188,38 @@ main{
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 849px) {
+  #bio p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 482px) {
   header h1{
     font-size: 14vw;
   }
-  header a{
+  header h2, h2, header a{
     font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  header h2, header a{
+    font-size: 5.5vw;
+  }
+  h3{
+    font-size: 5vw;
+  }
+  #youtube{
+    height: 40px;
+    width: 57px;
+  }
+  #instagram{
+    height: 40px;
+    width: 40px;
+  }
+  #youtube img, #instagram img{
+    max-height: 40px;
+    width: auto;
   }
 }
