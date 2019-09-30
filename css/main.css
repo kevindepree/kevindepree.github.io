@@ -140,6 +140,12 @@ main{
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 2000px) {
+  #networks, #shows{
+    max-width: 2000px;
+  }
+}
+
 @media screen and (max-width: 1075px) {
   #bio p{
     font-size: 18px;
