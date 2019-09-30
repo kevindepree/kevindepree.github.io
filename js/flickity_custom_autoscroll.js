@@ -59,6 +59,7 @@ const play2 = () => {
 
 flickity1 = new Flickity(slideshowEl, {
   cellAlign: 'left',
+  freeScroll: false,
   imagesLoaded: true,
   autoPlay: false,
   prevNextButtons: false,
@@ -72,6 +73,7 @@ flickity1.x = 0;
 
 flickity2 = new Flickity(slideshowE2, {
   cellAlign: 'left',
+  freeScroll: false,
   imagesLoaded: true,
   autoPlay: false,
   prevNextButtons: false,
