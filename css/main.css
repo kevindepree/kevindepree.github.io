@@ -126,6 +126,12 @@ main{
   padding-bottom: 50px;
 }
 
+iframe{
+  width: auto;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 2000px) {
   #networks, #shows{
     max-width: 2000px;
@@ -188,6 +194,9 @@ main{
   #bio #copyright{
     padding-bottom: 25px;
   }
+  iframe{
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 879px) {
@@ -196,7 +205,7 @@ main{
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1423px) {
   #portait{
     width: 50%;
   }
