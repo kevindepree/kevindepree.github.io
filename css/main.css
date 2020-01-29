@@ -205,7 +205,7 @@ iframe{
   }
 }
 
-@media screen and (min-width: 1423px) {
+@media screen and (min-width: 1440px) {
   #portait{
     width: 50%;
   }
