@@ -3,6 +3,15 @@ body{
   font-family: "Raleway", sans-serif;
 }
 
+section{
+  display: flex;
+}
+
+section img{
+  flex: 1;
+  width: 20%;
+}
+
 header{
   background-color: black;
   background-image: url("../img/kevin_depree_studio.jpg");
@@ -99,6 +108,7 @@ main{
   color: white;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #bio > *{
@@ -129,6 +139,18 @@ iframe{
 @media screen and (min-width: 1440px) {
   #bio > *{
     max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section img:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section img:nth-last-child(2){
+    display: none;
   }
 }
 
