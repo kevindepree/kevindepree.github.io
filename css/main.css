@@ -109,9 +109,6 @@ main{
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-#bio > *{
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -126,19 +123,31 @@ main{
 }
 
 #bio #copyright{
-  margin: auto 0 0;
+  margin: 50px 0 0;
   padding-bottom: 50px;
 }
 
-iframe{
-  width: auto;
-  height: 350px;
-  margin-bottom: 50px;
+#yt_video{
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+#yt_video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1440px) {
   #bio > *{
     max-width: 75%;
+  }
+  #yt_video{
+    padding-bottom: 42.1875%; /* 16:9 aspect ratio, percentage changed due to change in parent div width*/
   }
 }
 
