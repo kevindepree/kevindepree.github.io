@@ -368,19 +368,19 @@ form span{
 /* Media Styles */
 
 @media (max-width:767px) {
-    h1{
+    #home_tron h1{
       font-size: 64px;
     }
-    .navbar .nav-link{
+    .navbar-nav .nav-link{
       font-size: 18px;
     }
 }
 
 @media (max-width:480px) {
-    h1{
+    #home_tron h1{
       font-size: 40px;
     }
-    .navbar .nav-link{
+    .navbar-nav .nav-link{
       font-size: 18px;
     }
     footer{
