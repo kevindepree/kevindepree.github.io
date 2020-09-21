@@ -380,6 +380,10 @@ form span{
     .navbar-nav .nav-link{
       font-size: 18px;
     }
+    .navbar-nav{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 }
 
 @media (max-width:480px) {
@@ -396,6 +400,6 @@ form span{
       font-size: 18px;
     }
     input[type="email"] {
-      font-size: 14px;
+      max-width: 55%;
     }
 }
