@@ -384,6 +384,9 @@ form span{
       padding-top: 25px;
       padding-bottom: 25px;
     }
+    .navbar-toggler{
+      margin-bottom: 5px;
+    }
 }
 
 @media (max-width:480px) {
