@@ -376,18 +376,21 @@ form span{
     }
 }
 
-@media (max-width:480px) {
-  .col-sm-4:not(:last-of-type) {
-    margin-bottom: 25px;
-  }
+@media (orientation: landscape) and (max-height:425px) {
+    .navbar-nav .nav-link{
+      font-size: 18px;
+    }
 }
 
 @media (max-width:480px) {
+    .col-sm-4:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
     #home_tron h1{
       font-size: 40px;
     }
     .navbar-nav .nav-link{
-      font-size: 18px;
+      font-size: 17px;
     }
     footer{
       font-size: 18px;
