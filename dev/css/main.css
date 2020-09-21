@@ -364,3 +364,26 @@ form span{
 .social_icons > div:hover .img-start{
   opacity: 0;
 }
+
+/* Media Styles */
+
+@media (max-width:767px) {
+    h1{
+      font-size: 64px;
+    }
+    .navbar .nav-link{
+      font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    h1{
+      font-size: 40px;
+    }
+    .navbar .nav-link{
+      font-size: 18px;
+    }
+    footer{
+      font-size: 18px;
+    }
+}
