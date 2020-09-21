@@ -1,137 +1,229 @@
 body{
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-section{
-  display: flex;
-}
-
-section img{
-  flex: 1;
-  width: 20%;
-}
-
-header{
+  font-family: 'Poppins', sans-serif;
+  color: white;
   background-color: black;
-  background-image: url("../img/kevin_depree_studio.jpg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 75vh;
-  color: #fff000;
+  letter-spacing: .15em;
 }
 
-h1{
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  font-weight: 800;
-  font-size: 69px;
+/* Home */
+
+.jumbotron{
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#home_tron h1{
+  font-weight: 700;
+  font-size: 78px;
+  text-align: center;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+/* Backgrounds */
+
+#home_tron{
+  height: 100vh;
+  background-image: url(../img/kevin_depree_home.jpg);
+}
+
+#a_comp_tron{
+  background-image: url(../img/assistant_composer.jpg);
+}
+
+#a_comp_tron p{
+  text-align: center;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#comp_tron{
+  background-image: url(../img/johannes_plenio_piano.jpg);
+}
+
+#drummer_tron{
+  background-image: url(../img/kevin_depree_drummer.jpg);
+}
+
+#music_producer_tron{
+  background-image: url(../img/music_producer.jpg);
+}
+
+/* Headings and text*/
+
+h2, h3, h4{
+  margin-top: 50px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+h4, p{
+  margin-bottom: 25px;
+}
+
+p, ul{
+  margin-top: 25px;
+}
+
+ul{
+  margin-bottom: 0;
+}
+
+p, ul li{
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+
+ul li{
+  margin-bottom: 8px;
 }
 
 h2{
-  font-weight: 700;
-  font-size: 32px;
-  margin: 0;
+  font-size: 26px;
 }
 
 h3{
-  font-weight: 500;
-  font-size: 25px;
-  margin: 0 0 25px;
+  font-size: 22px;
 }
 
-header > *{
-  margin-left: 50px;
+h4{
+  font-size: 20px;
 }
 
-header h1, header h2, header p{
-  margin-right: 50px;
+/* Lists */
+
+ul{
+  list-style-type: square;
+  line-height: 1.5;
 }
 
-header h2{
-  font-weight: 800;
+/* Drum Lesson Rows */
+
+.drum_lesson{
+  margin-bottom: 25px;
 }
 
-header h2, header p{
-  margin-bottom: 50px;
+.drum_lesson h4{
+  margin-top: 25px;
 }
 
-header > div{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 50px;
+.drum_lesson p:last-child, .drum_lesson:first-of-type p{
+  margin-bottom: 0;
 }
 
-#youtube{
-  width: 71px;
-  height: 50px;
+.drum_lesson:first-of-type ul{
+  margin-top: 8px;
 }
 
-#instagram{
-  width: 50px;
-  height: 50px;
+/* Nav */
+.navbar{
+  justify-content: flex-end;
 }
 
-header a{
-  color: #fff000;
-  text-decoration: none;
-  font-size: 32px;
-  font-weight: 800;
-}
-
-header > div img{
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity .3s ease-in-out;
-  -moz-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-}
-
-header > div:hover .img-hover{
-  opacity: 1;
-}
-
-header > div:hover .img-start{
-  opacity: 0;
-}
-
-main{
-  background: black;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#bio{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-#bio h2{
+.navbar-nav{
+  align-items: flex-end;
+  line-height: 1;
   padding-top: 50px;
-}
-
-#bio p{
-  font-size: 18px;
-  margin: 0 0 25px;
-}
-
-#bio #copyright{
-  margin: 50px 0 0;
+  padding-right: 38px;
   padding-bottom: 50px;
+  padding-left: 50px;
 }
+
+.navbar-nav li:last-child{
+  margin-bottom: 50px;
+}
+
+.navbar-nav .nav-link{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: .15em;
+  padding: 12px;
+  transition: all .4s;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:active, .navbar-nav .nav-link.active{
+  background: black;
+  color: white;
+  transition: all .4s;
+}
+
+/* Nav - Navbar Toggler */
+
+.navbar-toggler{
+  background: none;
+  border: none;
+  margin-right: 22px;
+  margin-bottom: 28px;
+  padding: 2px 12px 4px 12px;
+}
+
+.navbar-toggler:active, .navbar-toggler:focus{
+  outline: 0;
+}
+
+.navbar-toggler .icon-bar{
+  display: block;
+  width: 42px;
+  height: 5px;
+  border-radius: 0;
+  margin: 10px 0;
+  transition: all 0.3s;
+}
+
+.navbar-dark .navbar-toggler.collapsed .icon-bar{
+  background: white;
+}
+
+.navbar-dark .navbar-toggler .icon-bar{
+  background: black;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(1){
+  transform: translate(-6px) rotate(-45deg);
+  transform-origin: right;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(2){
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3){
+  transform: translate(-6px) rotate(45deg);
+  transform-origin: right;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1){
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2){
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3){
+  transform: rotate(0);
+}
+
+/* Composer */
 
 #yt_video{
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 #yt_video iframe{
@@ -142,53 +234,133 @@ main{
   height: 100%;
 }
 
-@media screen and (min-width: 1440px) {
-  #bio > *{
-    max-width: 75%;
-  }
-  #yt_video{
-    padding-bottom: 42.1875%; /* 16:9 aspect ratio, percentage changed due to change in parent div width*/
-  }
+/* E-mail */
+
+.email{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .4s;
 }
 
-@media screen and (max-width: 1024px) {
-  section img:last-child {
-    display: none;
-  }
+.email:hover{
+  background: white;
+  color: black;
+  transition: all .4s;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  section img:nth-last-child(2){
-    display: none;
-  }
+footer .email{
+  margin-top: 90px;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 482px) {
-  header h1{
-    font-size: 14vw;
-  }
-  header h2, h2, header a{
-    font-size: 6vw;
-  }
+/* Footer */
+
+footer{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 500;
 }
 
-@media screen and (max-width: 356px) {
-  header h2, header a{
-    font-size: 5.5vw;
-  }
-  h3{
-    font-size: 5vw;
-  }
-  #youtube{
-    height: 40px;
-    width: 57px;
-  }
-  #instagram{
-    height: 40px;
-    width: 40px;
-  }
-  #youtube img, #instagram img{
-    max-height: 40px;
-    width: auto;
-  }
+#copyright{
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+hr{
+  margin-top: 50px;
+  margin-bottom: 0;
+  border-top: 2px solid white;
+}
+
+/* Footer - Form */
+
+form{
+  margin-bottom: 100px;
+}
+
+label{
+  margin-bottom: 0;
+}
+
+form label{
+  line-height: 2;
+}
+
+input[type="email"] {
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+  color: white;
+  letter-spacing: normal;
+  font-size: 17px;
+}
+
+input[type="email"]:hover, input[type="email"]:focus{
+  outline: 0;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  color: white;
+  background: none;
+  border: none;
+  letter-spacing: .15em;
+  transition: all .4s;
+  padding: 10px;
+  outline: 0;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active{
+  background: white;
+  color: black;
+  transition: all .4s;
+}
+
+form span{
+  display: inline-block;
+}
+
+/* Footer - Social Media Icons */
+
+.social_icons{
+  margin-bottom: 95px;
+}
+
+.social_icons > div{
+  position: relative;
+  display: inline-block;
+}
+
+#youtube{
+  width: 45px;
+  height: 32px;
+  margin-right: 42px;
+}
+
+#instagram{
+  width: 32px;
+  height: 32px;
+}
+
+.social_icons > div img{
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.social_icons > div:hover .img-hover{
+  opacity: 1;
+}
+
+.social_icons > div:hover .img-start{
+  opacity: 0;
 }
