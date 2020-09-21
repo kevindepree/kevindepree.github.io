@@ -377,6 +377,12 @@ form span{
 }
 
 @media (max-width:480px) {
+  .col-sm-4:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width:480px) {
     #home_tron h1{
       font-size: 40px;
     }
@@ -385,5 +391,8 @@ form span{
     }
     footer{
       font-size: 18px;
+    }
+    input[type="email"] {
+      font-size: 14px;
     }
 }
