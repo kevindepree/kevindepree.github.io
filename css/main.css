@@ -364,3 +364,45 @@ form span{
 .social_icons > div:hover .img-start{
   opacity: 0;
 }
+
+/* Media Styles */
+
+@media (max-width:767px) {
+    #home_tron h1{
+      font-size: 64px;
+    }
+    .navbar-nav .nav-link{
+      font-size: 18px;
+    }
+}
+
+@media (orientation: landscape) and (max-height:425px) {
+    .navbar-nav .nav-link{
+      font-size: 18px;
+    }
+    .navbar-nav{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .navbar-toggler{
+      margin-bottom: 5px;
+    }
+}
+
+@media (max-width:480px) {
+    .col-sm-4:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+    #home_tron h1{
+      font-size: 40px;
+    }
+    .navbar-nav .nav-link{
+      font-size: 17px;
+    }
+    footer{
+      font-size: 18px;
+    }
+    input[type="email"] {
+      max-width: 55%;
+    }
+}
