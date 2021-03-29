@@ -136,6 +136,7 @@ ul{
 /* Nav */
 .navbar{
   justify-content: flex-end;
+  left: auto;
 }
 
 .navbar-nav{
@@ -226,7 +227,7 @@ ul{
   transform: rotate(0);
 }
 
-/* Composer */
+/* Composer, Drummer */
 
 #yt_video{
   position: relative;
@@ -242,6 +243,10 @@ ul{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.drum_lesson #yt_video{
+  margin-top: 0;
 }
 
 /* E-mail */
