@@ -98,16 +98,6 @@ h4{
   font-size: 20px;
 }
 
-a{
-  text-transform: uppercase;
-  transition: .3s all;
-}
-
-a:hover{
-  color: white;
-  text-decoration: none;
-}
-
 /* Lists */
 
 ul{
@@ -131,6 +121,20 @@ ul{
 
 .drum_lesson:first-of-type ul{
   margin-top: 8px;
+}
+
+.drum_lesson a{
+  text-transform: uppercase;
+  transition: .4s all;
+  padding: 10px;
+  margin-left: -10px;
+  color: white;
+}
+
+.drum_lesson a:hover{
+  color: black;
+  background: white;
+  text-decoration: none;
 }
 
 /* Nav */
