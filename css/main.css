@@ -98,6 +98,16 @@ h4{
   font-size: 20px;
 }
 
+a{
+  text-transform: uppercase;
+  transition: .3s all;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 /* Lists */
 
 ul{
