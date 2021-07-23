@@ -56,13 +56,18 @@
         flex-flow: column;
         justify-content: center;
       }
-      #recent_works p{
-        line-height: 1.5;
+      #recent_projects p{
+        line-height: 2;
+        margin-bottom: .75rem;
       }
-      #recent_works span{
+      #recent_projects .row p{
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+      #recent_projects span{
         font-size: .8em;
       }
-      #music a{
+      #bio a{
         color: black;
         font-weight: 700;
         text-decoration: none;
@@ -70,7 +75,7 @@
         padding-right: 2.5px;
         transition: all .4s;
       }
-      #music a:hover{
+      #bio a:hover{
         color: white;
         background-color: black;
       }
@@ -116,25 +121,36 @@
             <h3>Bio</h3>
             <p>Kevin DePree is a drummer who understands the role of drums/percussion in a score for film & television. With his ability to deliver high quality live percussion, experimental percussion, processed live percussion, and programmed percussion as multi-track files, he is becoming a first call for composers in the UK and USA.</p>
             <p>DePree began his musical career, like many drummers, playing in bars and cover bands but always had an interest in composing his own music. He eventually was introduced to Emmy Winning/BAFTA Nominated composer Sheridan Tongue who guided him through some of his first projects as a drum programmer & composer.</p>
+            <p>Q: What is your process like working with a composer?<br>A: At the beginning of each project I'll chat with the composer about the vibe they are going for. They may request a specific instrumnet (oil drum, steel pan, ect.) and if I don't currently own one I'll either buy one or rent it for a day and sample it. By the time I work on a couple tracks and get some feedback I have a good idea what is working.</p>
+            <p>Q: Where do you get your sounds?<br>A: I'm constantly renting drums, recording them, mixing them, and making my own sample instrumnets but the coolest sounds I have all come from unusual sources like these <a href="https://youtu.be/pRJiN_8GnNM" target="_blank">Metal Sails</a>.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="recent_works" class="container p-4 p-md-5">
-      <h3>Recent Works</h3>
+    <div id="recent_projects" class="container p-4 p-md-5">
+      <h3>Recent Projects</h3>
+      <p>Live percussion, experimental percussion, processed live percussion, and programmed percussion.</p>
       <div class="row g-4">
-        <div class="col-md">
+        <div class="col-md-4">
           <img class="img-fluid" src="img/works/meerkat_manor.jpg" alt="Meerkat Manor: Rise of the Dynasty">
           <p>Meerkat Manor: Rise of the Dynasty<br><span>BBC America, AMC+</span></p>
         </div>
-        <div class="col-md">
+        <div class="col-md-4">
           <img class="img-fluid" src="img/works/spotlight_on_the_troubles.jpg" alt="Spotlight on The Troubles: A Secret History">
           <p>Spotlight on The Troubles: A Secret History<br><span>BBC One Northern Ireland</span></p>
         </div>
-        <div class="col-md">
+        <div class="col-md-4">
           <img class="img-fluid" src="img/works/narco_wars.jpg" alt="Narco Wars">
           <p>Narco Wars<br><span>National Geographic</span></p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="img/works/silent_witness.jpg" alt="Silent Witness">
+          <p>Silent Witness<br><span>ITV One</span></p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="img/works/dci_banks.jpg" alt="DCI Banks">
+          <p>DCI Banks<br><span>BBC One</span></p>
         </div>
       </div>
     </div>
@@ -146,9 +162,13 @@
             <img class="img-fluid" src="img/kevin_depree_2.jpg" alt="Kevin Depree Music">
           </div>
           <div class="col-md">
-            <h3>Music</h3>
-            <p>Select works which include live percussion, experimental percussion, processed live percussion, and programmed percussion.</p>
-            <p>Listen on <a href="https://soundcloud.com/user-717681410/sets/kd-percussion/s-nzxwta7jmP2" target="_blank">SoundCloud</a></p>
+            <!-- <h3>Music</h3> -->
+            <!-- <p>Select works which include live percussion, experimental percussion, processed live percussion, and programmed percussion.</p> -->
+            <!-- <p>Listen on <a href="https://soundcloud.com/user-717681410/sets/kd-percussion/s-nzxwta7jmP2" target="_blank">SoundCloud</a></p> -->
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div style="font-size: 10px; color: #cccccc;">
+              <a href="https://soundcloud.com/user-717681410" title="Kevin DePree" target="_blank" style="color: #cccccc; text-decoration: none;">Kevin DePree</a> · <a href="https://soundcloud.com/user-717681410/sets/kd-percussion/s-nzxwta7jmP2" title="Live, Programmed, Processed, &amp; Experimental Percussion Reel" target="_blank" style="color: #cccccc; text-decoration: none;">Live, Programmed, Processed, &amp; Experimental Percussion Reel</a>
+            </div>
           </div>
         </div>
       </div>
