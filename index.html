@@ -1,217 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="img/kevin_depree_favicon_white.png" type="image/png" rel="icon" >
-    <title>Kevin DePree | Drummer for Film & Television  | LA</title>
-    <meta name="description" content="Kevin DePree is a drummer who understands the role of drums/percussion in a score for film & television.">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main_old.css">
+        <link href="assets/img/kevin_depree_favicon_white.png" type="image/png" rel="icon" >
+        <title>Kevin DePree | Drummer for Film & Television  | LA</title>
+        <meta name="description" content="Kevin DePree is a drummer who understands the role of drums/percussion in a score for film & television.">
+    </head>
+    <body>
+        <header id="home">
+            <h1>Kevin DePree</h1>
+            <p>Drummer // Composer // Music Maker // Explorer of Cool Sounds</p>
+            <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
+        </header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#past_projects">Past Projects</a>
+                </li>
+                <li>
+                    <a href="#biography">Biography</a>
+                </li>
+                <li>
+                    <a href="#latest_music">Latest Music</a>
+                </li>
+                <li>
+                    <a href="#my_sound">My Sound</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+            </ol>
+        </nav>
+        <main>
+            <section id="past_projects">
+                <ul>
+                    <li>
+                        <img src="assets/img/works/meerkat_manor.jpg" alt="Meerkat Manor: Rise of the Dynasty">
+                        <p>Meerkat Manor: Rise of the Dynasty<br><span>BBC America, AMC+</span></p>
+                    </li>
+                    <li>
+                        <img src="assets/img/works/spotlight_on_the_troubles.jpg" alt="Spotlight on The Troubles: A Secret History">
+                        <p>Spotlight on The Troubles: A Secret History<br><span>BBC One Northern Ireland</span></p>
+                    </li>
+                    <li>
+                        <img src="assets/img/works/narco_wars.jpg" alt="Narco Wars">
+                        <p>Narco Wars<br><span>National Geographic</span></p>
+                    </li>
+                    <li>
+                        <img src="assets/img/works/mavericks.jpg" alt="Mavericks PBS">
+                        <p>Mavericks<br><span>PBS</span></p>
+                    </li>
+                </ul>
+            </section>
+            <section id="newsletter">
+                <form action="https://formspree.io/mleoebje" method="POST">
+                    <label for="email">Sign Up for Newsletter:</label>
+                    <span>
+                      <input type="email" name="_replyto" required>
+                      <input type="submit" value="Submit">
+                    </span>
+                </form>
+            </section>
+            <section id="biography">
 
-    <style>
-      .img-hover{
-        opacity: 0;
-      }
-      .white_bg{
-        color: black;
-        background-color: white;
-      }
-      body{
-        letter-spacing: normal;
-      }
-      h3{
-        margin-top: 0;
-        margin-bottom: .75rem;
-        font-weight: 500;
-        font-size: 1.25rem;
-      }
-      .white_bg h3{
-        font-weight: 600;
-      }
-      p{
-        font-size: 1em;
-        font-weight: 500;
-        line-height: 2;
-        letter-spacing: normal;
-        margin-bottom: 0;
-        margin-top: .75rem;
-      }
-      h1 {
-        margin: 0;
-        margin-bottom: .5rem;
-        font-size: 1.8em;
-        font-weight: 600;
-      }
+            </section>
+            <section id="latest_music">
 
-      h2 {
-        text-transform: none;
-        font-size: 1.3em;
-        margin: 0;
-        line-height: 1.2;
-      }
-      #title .col-md {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-      }
-      #recent_projects p{
-        line-height: 2;
-        margin-bottom: .75rem;
-      }
-      #recent_projects .row p{
-        line-height: 1.5;
-        margin-bottom: 0;
-      }
-      #recent_projects span{
-        font-size: .8em;
-      }
-      #bio a{
-        color: black;
-        font-weight: 700;
-        text-decoration: none;
-        padding-left: 2.5px;
-        padding-right: 2.5px;
-        transition: all .4s;
-      }
-      #bio a:hover{
-        color: white;
-        background-color: black;
-      }
-      footer.container {
-        font-size: 1rem;
-        letter-spacing: normal;
-      }
-      #copyright {
-          font-size: .8rem;
-      }
-      input[type="submit"] {
-          letter-spacing: normal;
-          font-weight: 500;
-      }
-      form{
-        margin: 0;
-      }
-      #copyright{
-        margin: 0;
-      }
-      #title a.email {
-        display: flex;
-        align-self: flex-start;
-        font-weight: 500;
-        padding: 5px;
-        margin-left: -5px;
-        margin-top: .25rem;
-      }
-      footer, input[type="submit"]{
-        text-transform: none;
-      }
-      h2,h3,h4{
-        text-transform: none;
-      }
-      iframe{
-        margin-top: .75rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="title" class="container p-4 p-md-5">
-      <div class="row g-4">
-        <div class="col-md">
-          <h1>Kevin DePree</h1>
-          <h2>Drum Programming, Bespoke Sample Instrument Design and Live Drums/Percussion for Film & Television.</h2>
-          <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
-        </div>
-        <div class="col-md">
-          <img class="img-fluid" src="img/kevin_depree.jpg" alt="Kevin DePree">
-        </div>
-      </div>
-    </div>
+            </section>
+            <section id="my_sound">
 
-    <div class="white_bg">
-      <div id="bio" class="container p-4 p-md-5">
-        <div class="row g-4">
-          <div class="col-md">
-            <img class="img-fluid" src="img/kevin_depree_drumming.jpg" alt="Kevin DePree Drumming">
-          </div>
-          <div class="col-md">
-            <h3>Bio</h3>
-            <p>Based in Los Angeles, but originally from Holland, Michigan, Composer Kevin DePree (33) began his career in the music industry as a drummer, playing professionally by his teenage years.</p>
-            <p>DePree is renowned for having an ear for creating cool percussion effects in his music. He achieves this by constantly pushing the boundaries of sound, experimenting with unusual items to bring originality to every score. It is his unique ability to turn these unconventional concepts into delicate percussion rhythms, combined with his trademark heartbeat of driving drums, that gives his music a truly timeless, yet contemporary dimension.</p>
-            <p>A talented multi-instrument performer in his own right, DePree spent years honing his talent as a musician playing bass, keyboards, synths and guitars as well as his beloved drums while perfecting his craft as a composer.</p>
-            <p>In recent years DePree has worked with Emmy winning composer Sheridan Tongue as a session drummer, bass player, programmer and sound engineer with credits on Tongue’s soundtracks for Meerkat Manor: Rise of the Dynasty (BBC America, AMC+), Spotlight on The Troubles (BBC UK), Narco Wars (National Geographic) and Mavericks (PBS Montana).</p>
-            <p>Critical Moment is the title of DePree’s first solo trailer album with Position Music. Once again, percussion-oriented rhythms heavily influence this collection and he performs many of the key instruments himself, having acquired an eclectic and impressive collection of custom drums and unique percussion instruments during his career.</p>
-            <p>His time spent working in production music was where he learnt to develop his own musical style. He is a master at knowing just the right balance of technology to use in every track, whilst carving out space for human performance and collaborating with other artists to elevate his music to the next level with stunning effect.</p>
-            <p>DePree says: “What really excites me is finding a new sound or concept to add to a track to make it unique to my style. Playing live while programming my own custom sampled drums helps me create a modern sounding palette of drums and percussion that is key to my musical style.”</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="recent_projects" class="container p-4 p-md-5">
-      <h3>Recent Projects</h3>
-      <p>Live percussion, experimental percussion, processed live percussion, and programmed percussion.</p>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <img class="img-fluid" src="img/works/meerkat_manor.jpg" alt="Meerkat Manor: Rise of the Dynasty">
-          <p>Meerkat Manor: Rise of the Dynasty<br><span>BBC America, AMC+</span></p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="img/works/spotlight_on_the_troubles.jpg" alt="Spotlight on The Troubles: A Secret History">
-          <p>Spotlight on The Troubles: A Secret History<br><span>BBC One Northern Ireland</span></p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="img/works/narco_wars.jpg" alt="Narco Wars">
-          <p>Narco Wars<br><span>National Geographic</span></p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="img/works/mavericks.jpg" alt="Mavericks PBS">
-          <p>Mavericks<br><span>PBS</span></p>
-        </div>
-        <!-- <div class="col-md-4">
-          <img class="img-fluid" src="img/works/silent_witness.jpg" alt="Silent Witness">
-          <p>Silent Witness<br><span>ITV One</span></p>
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="img/works/dci_banks.jpg" alt="DCI Banks">
-          <p>DCI Banks<br><span>BBC One</span></p>
-        </div> -->
-      </div>
-    </div>
-
-    <div class="white_bg">
-      <div id="music" class="container p-4 p-md-5">
-        <div class="row g-4">
-          <div class="col-md">
-            <h3>Music</h3>
-            <p>Selected works from recent projects which include live percussion, experimental percussion, processed live percussion, and programmed percussion.</p>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <div style="font-size: 10px; color: #cccccc;">
-              <a href="https://soundcloud.com/user-717681410" title="Kevin DePree" target="_blank" style="color: #cccccc; text-decoration: none;">Kevin DePree</a> · <a href="https://soundcloud.com/user-717681410/sets/kd-percussion/s-nzxwta7jmP2" title="Live, Programmed, Processed, &amp; Experimental Percussion Reel" target="_blank" style="color: #cccccc; text-decoration: none;">Live, Programmed, Processed, &amp; Experimental Percussion Reel</a>
+            </section>
+            <section id="services">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </section>
+        </main>
+        <footer>
+            <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
+            <div class="social_icons">
+                <div id="youtube"><a href="https://www.youtube.com/user/SoundIsRed" target="_blank"><img class="img-hover" src="assets/img/youtube_32.png" alt="Youtube"><img class="img-start" src="assets/img/youtube_white_32.png" alt="Youtube"></a></div>
+                <div id="instagram"><a href="https://www.instagram.com/kevin_depree/" target="_blank"><img class="img-hover" src="assets/img/instagram_32.png" alt="Instagram"><img class="img-start" src="assets/img/instagram_white_32.png" alt="Instagram"></a></div>
             </div>
-          </div>
-          <div class="col-md">
-            <img class="img-fluid" src="img/kevin_depree_2.jpg" alt="Kevin Depree Music">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="container">
-      <a class="email m-4 mt-md-5" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
-      <div class="social_icons mb-4">
-        <div id="youtube"><a href="https://www.youtube.com/user/SoundIsRed" target="_blank"><img class="img-hover" src="img/youtube_32.png" alt="Youtube"><img class="img-start" src="img/youtube_white_32.png" alt="Youtube"></a></div>
-        <div id="instagram"><a href="https://www.instagram.com/kevin_depree/" target="_blank"><img class="img-hover" src="img/instagram_32.png" alt="Instagram"><img class="img-start" src="img/instagram_white_32.png" alt="Instagram"></a></div>
-      </div>
-      <form action="https://formspree.io/mleoebje" method="POST">
-        <label for="email">Sign Up for Newsletter:</label>
-        <span>
-          <input type="email" name="_replyto" required>
-          <input type="submit" value="Submit">
-        </span>
-      </form>
-      <p id="copyright" class="m-4 m-md-5">&copy; 2022 Kevin DePree</p>
-    </footer>
-  </body>
+            <p id="copyright">&copy; 2022 Kevin DePree</p>
+        </footer>
+    </body>
 </html>
