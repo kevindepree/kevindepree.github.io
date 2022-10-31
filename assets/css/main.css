@@ -1,3 +1,25 @@
 html{
     font-family: "Jost", Arial, Helvetica, sans-serif;
 }
+body{
+    margin: 0;
+}
+header{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+header h1{
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+video{
+    max-width: 100%;
+}
