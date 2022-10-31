@@ -1,25 +1,19 @@
-html{
-    font-family: "Jost", Arial, Helvetica, sans-serif;
+p, a, header h2{
+    font-size: 1.5rem
 }
-body{
-    margin: 0;
+.bg-full{
+    min-height: 100vh;
 }
 header{
-    background: black;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    color: #FFFFFF;
+    background: url(../img/bg/kevin_depree_landing_bg.jpg);
 }
 header h1{
-    font-weight: 500;
-    font-size: 46px;
-    line-height: 1;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-left: 50px;
 }
-video{
-    max-width: 100%;
+header h1, header h2{
+    color: #FFFFFF;
+}
+header .email{
+    display: block;
 }
