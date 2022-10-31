@@ -1,11 +1,14 @@
 p, a, header h2{
     font-size: 1.5rem
 }
+.cap{
+    text-transform: capitalize;
+}
 .bg-full{
     min-height: 100vh;
 }
 header{
-    background: url(../img/bg/kevin_depree_landing_bg.jpg);
+    background-image: url(../img/bg/kevin_depree_landing_bg.jpg);
 }
 header h1{
     letter-spacing: 0.025em;
@@ -16,4 +19,26 @@ header h1, header h2{
 }
 header .email{
     display: block;
+}
+#newsletter{
+    background-image: url(../img/bg/kevin_depree_newsletter_bg.jpg);
+    min-height: 60vh;
+}
+#past_projects ul p{
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+#past_projects ul p span{
+    font-size: 1.125rem;
+}
+@media (min-width:960px) {
+    #past_projects p{
+        flex: 1;
+    }
+    #past_projects ul{
+        flex: 2;
+    }
+    #past_projects li{
+        margin-top: 0;
+    }
 }

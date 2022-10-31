@@ -5023,6 +5023,318 @@ ul.uk-nav-sub {
 }
 
 /* ========================================================================
+   Component: Text
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/* line 45, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-lead {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* line 52, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-meta {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #999;
+}
+
+/* Size modifiers
+ ========================================================================== */
+/* line 63, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-small {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* line 69, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-large {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* line 75, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-default {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Weight modifier
+ ========================================================================== */
+/* line 84, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-light {
+  font-weight: 300;
+}
+
+/* line 85, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-normal {
+  font-weight: 400;
+}
+
+/* line 86, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-bold {
+  font-weight: 700;
+}
+
+/* line 88, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-lighter {
+  font-weight: lighter;
+}
+
+/* line 89, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-bolder {
+  font-weight: bolder;
+}
+
+/* Style modifier
+ ========================================================================== */
+/* line 95, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-italic {
+  font-style: italic;
+}
+
+/* Transform modifier
+ ========================================================================== */
+/* line 101, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* line 102, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+/* line 103, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+/* Decoration modifier
+ ========================================================================== */
+/* line 109, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* Color modifiers
+ ========================================================================== */
+/* line 115, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-muted {
+  color: #999 !important;
+}
+
+/* line 116, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-emphasis {
+  color: #333 !important;
+}
+
+/* line 117, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-primary {
+  color: #1e87f0 !important;
+}
+
+/* line 118, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-secondary {
+  color: #222 !important;
+}
+
+/* line 119, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-success {
+  color: #32d296 !important;
+}
+
+/* line 120, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-warning {
+  color: #faa05a !important;
+}
+
+/* line 121, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-danger {
+  color: #f0506e !important;
+}
+
+/* Background modifier
+ ========================================================================== */
+/*
+ * 1. The background clips to the foreground text. Works in all browsers.
+ * 2. Default color is set to transparent.
+ * 3. Container fits the text
+ * 4. Style
+ */
+/* line 134, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-background {
+  /* 1 */
+  -webkit-background-clip: text;
+  /* 2 */
+  color: transparent !important;
+  /* 3 */
+  display: inline-block;
+  /* 4 */
+  background-color: #1e87f0;
+}
+
+/* Alignment modifiers
+ ========================================================================== */
+/* line 150, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-left {
+  text-align: left !important;
+}
+
+/* line 151, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-right {
+  text-align: right !important;
+}
+
+/* line 152, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-center {
+  text-align: center !important;
+}
+
+/* line 153, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-justify {
+  text-align: justify !important;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  /* line 158, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-left\@s {
+    text-align: left !important;
+  }
+  /* line 159, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-right\@s {
+    text-align: right !important;
+  }
+  /* line 160, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-center\@s {
+    text-align: center !important;
+  }
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  /* line 167, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-left\@m {
+    text-align: left !important;
+  }
+  /* line 168, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-right\@m {
+    text-align: right !important;
+  }
+  /* line 169, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-center\@m {
+    text-align: center !important;
+  }
+}
+
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* line 176, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-left\@l {
+    text-align: left !important;
+  }
+  /* line 177, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-right\@l {
+    text-align: right !important;
+  }
+  /* line 178, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-center\@l {
+    text-align: center !important;
+  }
+}
+
+/* Large screen and bigger */
+@media (min-width: 1600px) {
+  /* line 185, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-left\@xl {
+    text-align: left !important;
+  }
+  /* line 186, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-right\@xl {
+    text-align: right !important;
+  }
+  /* line 187, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+  .uk-text-center\@xl {
+    text-align: center !important;
+  }
+}
+
+/*
+ * Vertical
+ */
+/* line 195, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-top {
+  vertical-align: top !important;
+}
+
+/* line 196, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-middle {
+  vertical-align: middle !important;
+}
+
+/* line 197, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-bottom {
+  vertical-align: bottom !important;
+}
+
+/* line 198, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-baseline {
+  vertical-align: baseline !important;
+}
+
+/* Wrap modifiers
+ ========================================================================== */
+/*
+ * Prevent text from wrapping onto multiple lines
+ */
+/* line 208, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-nowrap {
+  white-space: nowrap;
+}
+
+/*
+ * 1. Make sure a max-width is set after which truncation can occur
+ * 2. Prevent text from wrapping onto multiple lines, and truncate with an ellipsis
+ * 3. Fix for table cells
+ */
+/* line 216, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-truncate {
+  /* 1 */
+  max-width: 100%;
+  /* 2 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 2 */
+/* line 226, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+th.uk-text-truncate,
+td.uk-text-truncate {
+  max-width: 0;
+}
+
+/*
+ * Wrap long words onto the next line and break them if they are too long to fit.
+ * 1. Make it work with table cells in all browsers.
+ * Note: Not using `hyphens: auto` because it hyphenates text even if not needed.
+ */
+/* line 235, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+.uk-text-break {
+  overflow-wrap: break-word;
+}
+
+/* 1 */
+/* line 238, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
+th.uk-text-break,
+td.uk-text-break {
+  word-break: break-word;
+}
+
+/* ========================================================================
    Component: Column
  ========================================================================== */
 /* line 27, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/column.scss */
