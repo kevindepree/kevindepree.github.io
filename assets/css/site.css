@@ -46,7 +46,7 @@ a,
 a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link {
-  color: #ffc800;
+  color: #f0e100;
   text-decoration: underline;
 }
 
@@ -717,7 +717,7 @@ template {
 
 /* line 132, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/list.scss */
 .uk-list-secondary > ::before {
-  color: #222 !important;
+  color: black !important;
 }
 
 /* Image bullet modifier
@@ -1101,14 +1101,14 @@ button.uk-icon:not(:disabled) {
  */
 /* line 210, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/button.scss */
 .uk-button-secondary {
-  background-color: #222;
+  background-color: black;
   color: #fff;
 }
 
 /* Hover */
 /* line 217, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/button.scss */
 .uk-button-secondary:hover {
-  background-color: #151515;
+  background-color: black;
   color: #fff;
 }
 
@@ -1116,7 +1116,7 @@ button.uk-icon:not(:disabled) {
 /* line 224, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/button.scss */
 .uk-button-secondary:active,
 .uk-button-secondary.uk-active {
-  background-color: #090909;
+  background-color: black;
   color: #fff;
 }
 
@@ -1367,7 +1367,7 @@ button.uk-icon:not(:disabled) {
  */
 /* line 179, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/section.scss */
 .uk-section-secondary {
-  background: #222;
+  background: black;
 }
 
 /* Overlap modifier
@@ -1700,7 +1700,7 @@ button.uk-icon:not(:disabled) {
  */
 /* line 205, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/tile.scss */
 .uk-tile-secondary {
-  background-color: #222;
+  background-color: black;
 }
 
 /* ========================================================================
@@ -1862,7 +1862,7 @@ button.uk-icon:not(:disabled) {
  */
 /* line 293, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/card.scss */
 .uk-card-secondary {
-  background-color: #222;
+  background-color: black;
   color: #fff;
 }
 
@@ -1873,7 +1873,7 @@ button.uk-icon:not(:disabled) {
 
 /* line 304, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/card.scss */
 .uk-card-secondary.uk-card-hover:hover {
-  background-color: #151515;
+  background-color: black;
 }
 
 /* Size modifier
@@ -2040,7 +2040,7 @@ button.uk-icon:not(:disabled) {
  */
 /* line 66, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/overlay.scss */
 .uk-overlay-primary {
-  background: rgba(34, 34, 34, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* ========================================================================
@@ -2173,7 +2173,7 @@ button.uk-icon:not(:disabled) {
   box-sizing: border-box;
   width: 100%;
   padding: 20px 20px;
-  background: #222;
+  background: black;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -5138,7 +5138,7 @@ ul.uk-nav-sub {
 
 /* line 118, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
 .uk-text-secondary {
-  color: #222 !important;
+  color: black !important;
 }
 
 /* line 119, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/text.scss */
@@ -5577,7 +5577,7 @@ iframe[data-uk-cover] {
 
 /* line 29, ../../../Desktop/Dev/kevindepree.github.io/assets/uikit-3.15.11/scss/components/background.scss */
 .uk-background-secondary {
-  background-color: #222;
+  background-color: black;
 }
 
 /* Size

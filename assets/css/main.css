@@ -1,4 +1,4 @@
-p, a, header h2{
+p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
 .cap{
@@ -7,8 +7,9 @@ p, a, header h2{
 .bg-full{
     min-height: 100vh;
 }
+/* Header */
 header{
-    background-image: url(../img/bg/kevin_depree_landing_bg.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 100%), url(../img/bg/kevin_depree_landing_bg.jpg);
 }
 header h1{
     letter-spacing: 0.025em;
@@ -20,10 +21,7 @@ header h1, header h2{
 header .email{
     display: block;
 }
-#newsletter{
-    background-image: url(../img/bg/kevin_depree_newsletter_bg.jpg);
-    min-height: 60vh;
-}
+/* Past Projects */
 #past_projects ul p{
     font-size: 1.25rem;
     line-height: 1.5;
@@ -41,4 +39,107 @@ header .email{
     #past_projects li{
         margin-top: 0;
     }
+}
+/* Newsletter */
+#newsletter{
+    background-image: url(../img/bg/kevin_depree_newsletter_bg.jpg);
+    min-height: 60vh;
+}
+form{
+    font-size: 2rem;
+}
+input[type="email"] {
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    letter-spacing: normal;
+    font-size: 2rem;
+}
+input[type="submit"] {
+    color: white;
+    background: none;
+    border: none;
+    transition: all .4s;
+    outline: 0;
+    font-size: 2rem;
+}
+input[type="submit"]:hover, input[type="submit"]:active{
+    background: white;
+    color: black;
+    transition: all .4s;
+    cursor: pointer;
+}
+/* Biography */
+#biography p, #biography_quote p{
+    line-height: 1.5;
+}
+#biography_quote{
+    background-image: url(../img/bg/kevin_depree_quote_bg.jpg);
+}
+/* Latest Music */
+#latest_music{
+    background-image: url(../img/bg/critical_moment_bg.jpg);
+}
+.uk-light a{
+    color: yellow;
+}
+.uk-light a:hover{
+    color: rgb(240, 225, 0);
+}
+/* Services */
+#services a{
+    color: blue;
+}
+#services a:hover{
+    color: rgb(0, 0, 160);
+}
+/* Footer */
+footer{
+    background-image: url(../img/bg/kevin_depree_footer_bg.jpg);
+}
+/* Footer - Social Media Icons */
+.social_icons > div{
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+}
+#youtube{
+    width: 45px;
+    height: 32px;
+}
+#instagram{
+    width: 32px;
+    height: 32px;
+}
+#twitter{
+    width: 39px;
+    height: 32px;
+}
+#tiktok{
+    width: 28px;
+    height: 32px;
+}
+#spotify{
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+}
+.social_icons > div img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.social_icons > div:hover .img-hover{
+    opacity: 1;
+}
+.social_icons > div:hover .img-start{
+    opacity: 0;
+}
+.img-hover {
+    opacity: 0;
 }
