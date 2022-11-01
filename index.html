@@ -13,16 +13,9 @@
         <meta name="description" content="Kevin DePree is a drummer who understands the role of drums/percussion in a score for film & television.">
     </head>
     <body class="uk-text-center">
-        <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left">
-            <h1 class="uk-padding">Kevin DePree</h1>
-            <div>
-                <h2 class="uk-padding uk-padding-remove-bottom">Drummer // Composer // Music Maker // Explorer of Cool Sounds</h2>
-                <a class="email uk-padding uk-margin-bottom uk-padding-remove-top" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
-            </div>
-        </header>
-        <nav uk-offcanvas="overlay: true">
+        <nav id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
             <div class="uk-offcanvas-bar">
-                <ol class="uk-nav uk-nav-default">
+                <ol class="uk-nav uk-nav-default uk-flex uk-flex-column uk-flex-bottom uk-margin-large-top uk-margin-right" uk-scrollspy-nav>
                     <li class="uk-active">
                         <a href="#home">Home</a>
                     </li>
@@ -44,6 +37,14 @@
                 </ol>
             </div>
         </nav>
+        <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left">
+            <h1 class="uk-padding">Kevin DePree</h1>
+            <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip" href="#"></a>
+            <div>
+                <h2 class="uk-padding uk-padding-remove-bottom">Drummer // Composer // Music Maker // Explorer of Cool Sounds</h2>
+                <a class="email uk-padding uk-margin-bottom uk-padding-remove-top" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
+            </div>
+        </header>
         <main>
             <section id="past_projects" class="bg-full uk-flex uk-flex-column">
                 <h2 class="uk-padding-large uk-padding-remove-bottom uk-margin-remove-bottom">Past Projects</h2>

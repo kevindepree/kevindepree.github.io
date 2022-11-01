@@ -24,6 +24,13 @@ header h1, header h2{
 header .email{
     display: block;
 }
+a.uk-navbar-toggle-icon{
+    z-index: 9999;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    fill: white;
+}
 /* Past Projects */
 #past_projects ul p{
     font-size: 1.25rem;
