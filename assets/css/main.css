@@ -1,6 +1,9 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description{
+    line-height: 1.5;
+}
 .cap{
     text-transform: capitalize;
 }
@@ -24,7 +27,6 @@ header .email{
 /* Past Projects */
 #past_projects ul p{
     font-size: 1.25rem;
-    line-height: 1.5;
 }
 #past_projects ul p span{
     font-size: 1.125rem;
@@ -45,9 +47,6 @@ header .email{
     background-image: url(../img/bg/kevin_depree_newsletter_bg.jpg);
     min-height: 60vh;
 }
-form{
-    font-size: 2rem;
-}
 input[type="email"] {
     background: none;
     border: none;
@@ -55,7 +54,6 @@ input[type="email"] {
     border-bottom: 2px solid white;
     color: white;
     letter-spacing: normal;
-    font-size: 2rem;
 }
 input[type="submit"] {
     color: white;
@@ -63,7 +61,6 @@ input[type="submit"] {
     border: none;
     transition: all .4s;
     outline: 0;
-    font-size: 2rem;
 }
 input[type="submit"]:hover, input[type="submit"]:active{
     background: white;
@@ -71,10 +68,12 @@ input[type="submit"]:hover, input[type="submit"]:active{
     transition: all .4s;
     cursor: pointer;
 }
-/* Biography */
-#biography p, #biography_quote p{
-    line-height: 1.5;
+@media (min-width:1200px) {
+    input[type="email"], input[type="submit"], form label.uk-text-small{
+        font-size: 1.5rem;
+    }
 }
+/* Biography */
 #biography_quote{
     background-image: url(../img/bg/kevin_depree_quote_bg.jpg);
 }
