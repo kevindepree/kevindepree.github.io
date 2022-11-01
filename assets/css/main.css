@@ -1,7 +1,7 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
-#past_projects ul p, #biography p, #biography_quote p, .latest-music-description{
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p{
     line-height: 1.5;
 }
 .cap{
@@ -10,9 +10,25 @@ p, a, header h2, .uk-list li{
 .bg-full{
     min-height: 100vh;
 }
+/* Nav */
+.uk-offcanvas-bar{
+    background-color: #FFFCF5;
+}
+.uk-offcanvas-bar a{
+    color: black;
+}
+.uk-offcanvas-bar a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.uk-nav li a{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
 /* Header */
 header{
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 100%), url(../img/bg/kevin_depree_landing_bg.jpg);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0) 100%), url(../img/bg/kevin_depree_landing_bg.jpg);
 }
 header h1{
     letter-spacing: 0.025em;
@@ -30,6 +46,12 @@ a.uk-navbar-toggle-icon{
     top: 50px;
     right: 50px;
     fill: white;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+}
+a.uk-navbar-toggle-icon.nav-open{
+    fill: black;
+    background: none;
 }
 /* Past Projects */
 #past_projects ul p{
@@ -101,6 +123,9 @@ input[type="submit"]:hover, input[type="submit"]:active{
 #services a:hover{
     color: rgb(0, 0, 160);
 }
+.uk-divider-vertical{
+    border-left: 1px solid black;
+}
 /* Footer */
 footer{
     background-image: url(../img/bg/kevin_depree_footer_bg.jpg);
@@ -148,4 +173,122 @@ footer{
 }
 .img-hover {
     opacity: 0;
+}
+/* mobile */
+@media (max-width:639px) {
+    a, form .uk-text-small{
+        font-size: 1rem;
+    }
+    header.uk-background-cover{
+        background-position: 70% 50%;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    header h2{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    a.uk-navbar-toggle-icon{
+        top: 17px;
+        right: 17px;
+        padding: 5px;
+    }
+    ol.uk-nav.uk-flex.uk-flex-column.uk-flex-bottom.uk-margin-large-top.uk-margin-right{
+        margin-right: 5px !important;
+        margin-top: 75px !important;
+    }
+    header .email{
+        font-size: 1rem;
+    }
+    section h2{
+        font-size: 1.5rem;
+    }
+    section h3{
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+    section p, section h4, .uk-list li{
+        font-size: 1rem;
+    }
+    #past_projects li p{
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    #past_projects ul p span{
+        font-size: 1rem;
+    }
+    #newsletter{
+        margin-top: 50px;
+    }
+    #biography .uk-grid{
+        padding-right: 25px;
+    }
+    #biography .uk-grid>div{
+        padding: 0;
+    }
+    #biography img{
+        padding-left: 0;
+    }
+    #latest_music .covers{
+        padding: 0;
+    }
+    #latest_music .covers img{
+        padding: 0;
+    }
+    .latest-music-description{
+        padding: 25px;
+    }
+    #latest_music .music-label{
+        padding: 0;
+    }
+    #latest_music .uk-list li{
+        line-height: 1.5;
+    }
+    video.uk-padding-large{
+        padding: 25px;
+    }
+    #my_sound #my_sound_description{
+        padding: 25px;
+    }
+    #services iframe.spotify{
+        width: 75%;
+    }
+    #past_projects .cap, #services h3, #services .cap, #services .credits-list{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #services iframe.soundcloud{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #services .live-drums{
+        margin: auto;
+    }
+    #services .live-drums .uk-list{
+        padding-right: 25px;
+    }
+    #services .credits-list{
+        text-align: left;
+        align-items: flex-start;
+    }
+    #services .testimonial-box{
+        padding-right: 25px;
+    }
+    #services .testimonial-box figure, #services .testimonial-box img{
+        padding: 0;
+    }
+    footer.uk-background-cover{
+        background-position: 80% 50%;
+    }
+    #copyright{
+        font-size: 1rem;
+    }
+    .social_icons img {
+        height: 20px;
+        width: auto;
+    }
+    .social_icons div {
+        height: 20px !important;
+    }
 }

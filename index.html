@@ -13,9 +13,9 @@
         <meta name="description" content="Kevin DePree is a drummer who understands the role of drums/percussion in a score for film & television.">
     </head>
     <body class="uk-text-center">
-        <nav id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <nav id="offcanvas-flip" uk-offcanvas="flip: true;">
             <div class="uk-offcanvas-bar">
-                <ol class="uk-nav uk-nav-default uk-flex uk-flex-column uk-flex-bottom uk-margin-large-top uk-margin-right" uk-scrollspy-nav>
+                <ol class="uk-nav uk-flex uk-flex-column uk-flex-bottom uk-margin-large-top uk-margin-right" uk-scrollspy-nav="closest: li; scroll: true;">
                     <li class="uk-active">
                         <a href="#home">Home</a>
                     </li>
@@ -39,7 +39,7 @@
         </nav>
         <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left">
             <h1 class="uk-padding">Kevin DePree</h1>
-            <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip" href="#"></a>
+            <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon="ratio: 2" uk-toggle="target: #offcanvas-flip" href="#"></a>
             <div>
                 <h2 class="uk-padding uk-padding-remove-bottom">Drummer // Composer // Music Maker // Explorer of Cool Sounds</h2>
                 <a class="email uk-padding uk-margin-bottom uk-padding-remove-top" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
@@ -99,13 +99,13 @@
             </section>
             <section id="latest_music" class="uk-background-cover bg-full uk-light">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Latest Music</h2>
-                    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-padding uk-width-1-2 uk-margin-auto" uk-grid>
+                    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-padding uk-width-1-2 uk-margin-auto covers" uk-grid>
                         <img src="assets/img/critical_moment.jpg" alt="Critical Moment - Kevin DePree" class="uk-padding uk-padding-remove-vertical">
                         <img src="assets/img/position_music.jpg" alt="Position Music" class="uk-padding uk-padding-remove-vertical">
                     </div>
                     <h3>Critical Moment</h3>
                         <p class="uk-padding-large uk-padding-remove-vertical latest-music-description">Kevin DePree brings a brand new collection of trailer music tracks to the table with his newest album, Critical Moment. This album features a wide selection of epic Neo-classical instrumental songs that serve as the perfect soundtrack to life's most intense moments. The Title track features fast-paced violins and epic high-production beat drops which build suspense and help develop the perfect cinematic soundtrack to pair with any trailer. We will be promoting hard and pushing for sync opps.</p>
-                        <p>Label: <a href="https://www.positionmusic.com/" target="_blank">Position Music</a></p>
+                        <p class="music-label">Label: <a href="https://www.positionmusic.com/" target="_blank">Position Music</a></p>
                         <h4>Credits:</h4>
                         <ul class="uk-list">
                             <li>Composer: Kevin DePree</li>
@@ -120,11 +120,11 @@
             </section>
             <section id="my_sound">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">My Sound</h2>
-                    <div class="uk-padding-large uk-padding-remove-vertical uk-text-left">
+                    <div id="my_sound_description" class="uk-padding-large uk-padding-remove-vertical uk-text-left">
                         <p>DePree is renowned for having an ear for creating cool percussive effects in his music. He achieves this by constantly pushing the boundaries of sound, experimenting with unusual items to bring originality to every score. It is his unique ability to turn these unconventional concepts into delicate percussion rhythms, combined with his trademark heartbeat of driving drums, that gives his music a truly timeless, yet contemporary dimension. Many of these unique sounds are recorded and prepared for audio samplers where DePree can recall his custom sounds at any time.</p>
                         <p>With every project DePree is involved with, he builds custom sounds from scratch and now has an entirely custom percussion ensemble, found sounds, and sound FX collection to build from anytime he starts a new project or is hired for a production.</p>
                     </div>
-                    <div class="uk-padding-large uk-width-1-3 uk-margin-auto" uk-slider="center: true">
+                    <div class="uk-padding-large uk-width-1-3@s uk-width-1-1 uk-margin-auto" uk-slider="center: true">
                         <div class="uk-position-relative">
                             <div class="uk-slider-container">
                                 <ul class="uk-slider-items uk-grid uk-child-width-1-1">
@@ -178,11 +178,11 @@
                         <p>DePree specializes in percussive driven, documentary, drama, and trailer styles of music.</p>
                         <p>Inquiries may be sent to <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a></p>
                         <p>Latest custom music for Amazon:</p>
-                        <iframe class="uk-margin-large-bottom" style="border-radius:12px" src="https://open.spotify.com/embed/album/2y8k2PBUOdOFrGMIRJgpF0?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe class="uk-margin-large-bottom spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/2y8k2PBUOdOFrGMIRJgpF0?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     <hr class="uk-divider-vertical uk-margin-remove-vertical">
                     <h3 class="uk-margin-large-top uk-margin-medium-bottom">Live drums percussion & drum programming for your productions</h3>
-                        <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom" uk-grid>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom live-drums" uk-grid>
+                            <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                             <ul class="uk-list uk-list-square uk-text-left">
                                 <li>Live Drums/Percussion</li>
                                 <li>Processed Live Drums/Percussion</li>
@@ -196,7 +196,7 @@
                     <hr class="uk-divider-vertical uk-margin-remove-vertical">
                     <h3 class="uk-margin-large-top">Credits</h3>
                         <p class="cap">contributing live drums/percussion, drum programming, experimental percussion, & sound design</p>
-                        <ul class="uk-list uk-list-square uk-margin-large-bottom uk-width-1-2 uk-flex uk-flex-column uk-flex-middle">
+                        <ul class="uk-list uk-list-square uk-margin-large-bottom uk-width-1-2@s uk-width-1-1 uk-flex uk-flex-column uk-flex-middle credits-list">
                             <li>Meerkat Manor: Rise of the Dynasty // BBC America, AMC+</li>
                             <li>Spotlight on The Troubles: A Secret History // BBC One Northern Ireland</li>
                             <li>Narco Wars // National Geographic</li>
@@ -204,7 +204,7 @@
                         </ul>
                     <hr class="uk-divider-vertical uk-margin-remove-vertical">
                     <h3 class="uk-margin-large-top uk-margin-medium-bottom">Testimonials</h3>
-                        <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom uk-padding-large uk-padding-remove-vertical" uk-grid>
+                        <div class="testimonial-box uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom uk-padding-large uk-padding-remove-vertical" uk-grid>
                             <figure class="uk-padding uk-padding-remove-vertical">
                                 <blockquote>
                                     <p>"Kevin has been playing drums/percussion and drum programming on my television & film soundtracks and albums for about 8 years. He has an incredible ear and a passion for music and always brings an exciting and original approach to both the recording side and the musical interpretation. He works quickly and provides wonderful recorded and produced stems in whatever format I require."</p>
@@ -222,15 +222,15 @@
         <footer class="uk-background-cover bg-full uk-light uk-flex uk-flex-right uk-flex-column">
             <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
             <div class="social_icons uk-margin-medium-top">
-                <div id="twitter"><a href="https://twitter.com/depree_kevin" target="_blank"><img class="img-hover" src="assets/img/icons/twitter_32.png" alt="Twitter"><img class="img-start" src="assets/img/icons/twitter_white_32.png" alt="Twitter"></a></div>
-                <div id="instagram"><a href="https://www.instagram.com/kevin_depree/" target="_blank"><img class="img-hover" src="assets/img/icons/instagram_32.png" alt="Instagram"><img class="img-start" src="assets/img/icons/instagram_white_32.png" alt="Instagram"></a></div>
+                <div id="instagram"><a href="https://www.instagram.com/kevindepreemusic/" target="_blank"><img class="img-hover" src="assets/img/icons/instagram_32.png" alt="Instagram"><img class="img-start" src="assets/img/icons/instagram_white_32.png" alt="Instagram"></a></div>
                 <div id="youtube"><a href="https://www.youtube.com/user/SoundIsRed" target="_blank"><img class="img-hover" src="assets/img/icons/youtube_32.png" alt="Youtube"><img class="img-start" src="assets/img/icons/youtube_white_32.png" alt="Youtube"></a></div>
-                <div id="tiktok"><a href="https://www.tiktok.com/@kevinddepree" target="_blank"><img class="img-hover" src="assets/img/icons/tik_tok_32.png" alt="TikTok"><img class="img-start" src="assets/img/icons/tik_tok_white_32.png" alt="TikTok"></a></div>
+                <div id="twitter"><a href="https://twitter.com/depree_kevin" target="_blank"><img class="img-hover" src="assets/img/icons/twitter_32.png" alt="Twitter"><img class="img-start" src="assets/img/icons/twitter_white_32.png" alt="Twitter"></a></div>
                 <div id="spotify"><a href="https://open.spotify.com/artist/4zPc67FY6kwMtVjJmCKTnB?si=ubWy9hlIRQSRUAhN9Rl0cQ" target="_blank"><img class="img-hover" src="assets/img/icons/spotify_32.png" alt="Spotify"><img class="img-start" src="assets/img/icons/spotify_white_32.png" alt="Spotify"></a></div>
             </div>
             <p id="copyright" class="uk-padding-large uk-padding-remove-top uk-margin-medium-top uk-text-small">&copy; 2022 Kevin DePree</p>
         </footer>
         <script src="assets/uikit-3.15.11/js/uikit.min.js"></script>
         <script src="assets/uikit-3.15.11/js/uikit-icons.min.js"></script>
+        <script src="assets/js/scrollspy-offcanvas-onclick.js"></script>
     </body>
 </html>
