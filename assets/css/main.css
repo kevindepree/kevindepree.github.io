@@ -146,6 +146,9 @@ input[type="submit"]:hover, input[type="submit"]:active{
 .uk-divider-vertical{
     border-left: 1px solid black;
 }
+figure{
+    align-self: center;
+}
 /* Footer */
 footer{
     background-image: url(../img/bg/kevin_depree_footer_bg.jpg);
