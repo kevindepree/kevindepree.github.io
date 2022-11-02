@@ -1,7 +1,7 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
-#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #services .credits-list, #services .live-list, figcaption{
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #services .live-list, figcaption{
     line-height: 1.5;
 }
 .cap{
@@ -274,7 +274,7 @@ footer{
     #services iframe.spotify{
         width: 75%;
     }
-    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .credits-list{
+    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap{
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -329,13 +329,9 @@ footer{
     #newsletter{
         margin-top: 50px;
     }
-    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .credits-list, #services .live-list{
+    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .live-list{
         padding-left: 25px;
         padding-right: 25px;
-    }
-    #services .credits-list{
-        text-align: left;
-        align-items: flex-start;
     }
 }
 /* 640px + */
