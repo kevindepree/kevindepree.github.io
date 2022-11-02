@@ -39,17 +39,17 @@
         </nav>
         <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left">
             <h1 class="uk-padding">Kevin DePree</h1>
-            <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon="ratio: 2" uk-toggle="target: #offcanvas-flip" href="#"></a>
+            <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon="ratio: 1.5" uk-toggle="target: #offcanvas-flip" href="#"></a>
             <div>
                 <h2 class="uk-padding uk-padding-remove-bottom">Drummer // Composer // Music Maker // Explorer of Cool Sounds</h2>
                 <a class="email uk-padding uk-margin-bottom uk-padding-remove-top" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
             </div>
         </header>
         <main>
-            <section id="past_projects" class="bg-full uk-flex uk-flex-column">
+            <section id="past_projects" class="bg-full uk-flex uk-flex-column" uk-scrollspy="cls: uk-animation-fade; target: h2, .cap; delay: 300;">
                 <h2 class="uk-padding-large uk-padding-remove-bottom uk-margin-remove-bottom">Past Projects</h2>
                 <p class="cap">contributing live drums/percussion, drum programming, experimental percussion, & sound design</p>
-                <ul class="uk-list uk-grid uk-padding-large uk-padding-remove-vertical" uk-grid>
+                <ul class="uk-list uk-grid uk-padding-large uk-padding-remove-vertical" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; target: li; delay: 450;">
                     <li class="uk-width-1-1 uk-width-1-4@m">
                         <img src="assets/img/projects/meerkat_manor.jpg" alt="Meerkat Manor: Rise of the Dynasty">
                         <p>Meerkat Manor: Rise of the Dynasty<br><span>BBC America, AMC+</span></p>
@@ -77,9 +77,9 @@
                     </span>
                 </form>
             </section>
-            <section id="biography">
+            <section id="biography" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Biography</h2>
-                <div class="uk-grid uk-padding-large uk-padding-remove-top" uk-grid="masonry: true">
+                <div class="uk-grid uk-padding-large uk-padding-remove-top" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div, >img; delay: 450;">
                     <div class="uk-width-1-1 uk-width-1-2@m uk-text-left uk-padding uk-padding-remove-top">
                         <p>Based in Los Angeles, but originally from Holland, Michigan, Composer Kevin DePree (33) began his career in the music industry as a drummer, playing professionally by his teenage years.</p>
                         <p>DePree is renowned for having an ear for creating cool percussion effects in his music. He achieves this by constantly pushing the boundaries of sound, experimenting with unusual items to bring originality to every score. It is his unique ability to turn these unconventional concepts into delicate percussion rhythms, combined with his trademark heartbeat of driving drums, that gives his music a truly timeless, yet contemporary dimension.</p>
@@ -91,15 +91,15 @@
                     <img src="assets/img/kevin_depree_headshot.jpg" alt="Kevin DePree" class="uk-width-1-1 uk-width-1-2@m">
                 </div>
             </section>
-            <section id="biography_quote" class="uk-background-cover bg-full uk-flex uk-flex-center uk-flex-bottom">
+            <section id="biography_quote" class="uk-background-cover bg-full uk-flex uk-flex-center uk-flex-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 450;">
                 <div class="uk-overlay-primary uk-padding uk-light uk-width-1-1 uk-width-1-2@m uk-margin-large-bottom">
                     <p>“What really excites me is finding a new sound or concept to add to a track to make it unique to my style. Playing live while programming my own custom sampled drums helps me create a modern sounding palette of drums and percussion that is key to my musical style.”</p>
                     <p class="uk-margin-remove-bottom">- Kevin DePree</p>
                 </div>
             </section>
-            <section id="latest_music" class="uk-background-cover bg-full uk-light">
+            <section id="latest_music" class="uk-background-cover bg-full uk-light" uk-parallax="bgy: -750" uk-scrollspy="cls: uk-animation-fade; target: h2, .covers, h3, p, h4, ul; delay: 300; offset: 100;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Latest Music</h2>
-                    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-padding uk-width-1-2 uk-margin-auto covers" uk-grid>
+                    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-width-1-2 uk-margin-auto covers" uk-grid>
                         <img src="assets/img/critical_moment.jpg" alt="Critical Moment - Kevin DePree" class="uk-padding uk-padding-remove-vertical">
                         <img src="assets/img/position_music.jpg" alt="Position Music" class="uk-padding uk-padding-remove-vertical">
                     </div>
@@ -118,13 +118,13 @@
                             <source src="assets/video/Critical_Moment.mp4">
                         </video>
             </section>
-            <section id="my_sound">
+            <section id="my_sound" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">My Sound</h2>
-                    <div id="my_sound_description" class="uk-padding-large uk-padding-remove-vertical uk-text-left">
+                    <div id="my_sound_description" class="uk-padding-large uk-padding-remove-vertical uk-text-left" uk-scrollspy="cls: uk-animation-fade; target: p; delay: 300;">
                         <p>DePree is renowned for having an ear for creating cool percussive effects in his music. He achieves this by constantly pushing the boundaries of sound, experimenting with unusual items to bring originality to every score. It is his unique ability to turn these unconventional concepts into delicate percussion rhythms, combined with his trademark heartbeat of driving drums, that gives his music a truly timeless, yet contemporary dimension. Many of these unique sounds are recorded and prepared for audio samplers where DePree can recall his custom sounds at any time.</p>
                         <p>With every project DePree is involved with, he builds custom sounds from scratch and now has an entirely custom percussion ensemble, found sounds, and sound FX collection to build from anytime he starts a new project or is hired for a production.</p>
                     </div>
-                    <div class="uk-padding-large uk-width-1-3@s uk-width-1-1 uk-margin-auto" uk-slider="center: true">
+                    <div class="uk-padding-large uk-width-1-2@s uk-width-1-3@l uk-width-1-1 uk-margin-auto" uk-slider="center: true">
                         <div class="uk-position-relative">
                             <div class="uk-slider-container">
                                 <ul class="uk-slider-items uk-grid uk-child-width-1-1">
@@ -172,18 +172,21 @@
                         <img src="assets/img/kevin_depree_my_sound_4.jpg" alt="Kevin DePree - My Sound image 4">
                     </div>
             </section>
-            <section id="services" class="uk-flex uk-flex-column uk-flex-middle">
+            <section id="services" class="uk-padding uk-padding-remove-vertical uk-flex uk-flex-column uk-flex-middle" uk-scrollspy="cls: uk-animation-fade; target: h2, .custom-music-section, hr, .live-drums-section, .credits-section, .testimonials-section; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Services</h2>
-                    <h3 class="uk-margin-remove-top">Custom Music</h3>
+                    <div class="custom-music-section" uk-scrollspy-class="uk-animation-slide-bottom">
+                        <h3 class="uk-margin-remove-top">Custom Music</h3>
                         <p>DePree specializes in percussive driven, documentary, drama, and trailer styles of music.</p>
                         <p>Inquiries may be sent to <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a></p>
                         <p>Latest custom music for Amazon:</p>
                         <iframe class="uk-margin-large-bottom spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/2y8k2PBUOdOFrGMIRJgpF0?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    <hr class="uk-divider-vertical uk-margin-remove-vertical">
-                    <h3 class="uk-margin-large-top uk-margin-medium-bottom">Live drums percussion & drum programming for your productions</h3>
+                    </div>
+                    <hr class="uk-divider-vertical uk-margin-remove-vertical" uk-scrollspy-class="uk-animation-slide-bottom">
+                    <div class="live-drums-section" uk-scrollspy-class="uk-animation-slide-bottom">
+                        <h3 class="uk-margin-large-top uk-margin-medium-bottom">Live drums percussion & drum programming for your productions</h3>
                         <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom live-drums" uk-grid>
                             <iframe class="soundcloud" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1276814632%3Fsecret_token%3Ds-nzxwta7jmP2&color=%234b3a2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            <ul class="uk-list uk-list-square uk-text-left">
+                            <ul class="uk-list uk-list-square uk-text-left live-list">
                                 <li>Live Drums/Percussion</li>
                                 <li>Processed Live Drums/Percussion</li>
                                 <li>Drum Programming (Including my own custom sample instruments)</li>
@@ -193,32 +196,39 @@
                                 <li>Multi-track delivery or stemmed down to roughly 10-20 tracks, unique FX tracks will be separate stems</li>
                             </ul>
                         </div>
-                    <hr class="uk-divider-vertical uk-margin-remove-vertical">
-                    <h3 class="uk-margin-large-top">Credits</h3>
+                    </div>
+                    <hr class="uk-divider-vertical uk-margin-remove-vertical" uk-scrollspy-class="uk-animation-slide-bottom">
+                    <div class="credits-section" uk-scrollspy-class="uk-animation-slide-bottom">
+                        <h3 class="uk-margin-large-top">Credits</h3>
                         <p class="cap">contributing live drums/percussion, drum programming, experimental percussion, & sound design</p>
-                        <ul class="uk-list uk-list-square uk-margin-large-bottom uk-width-1-2@s uk-width-1-1 uk-flex uk-flex-column uk-flex-middle credits-list">
+                        <ul class="uk-list uk-list-square uk-margin-large-bottom uk-width-1-1 uk-flex uk-flex-column uk-flex-middle credits-list">
                             <li>Meerkat Manor: Rise of the Dynasty // BBC America, AMC+</li>
                             <li>Spotlight on The Troubles: A Secret History // BBC One Northern Ireland</li>
                             <li>Narco Wars // National Geographic</li>
                             <li>Mavericks // PBS</li>
                         </ul>
-                    <hr class="uk-divider-vertical uk-margin-remove-vertical">
-                    <h3 class="uk-margin-large-top uk-margin-medium-bottom">Testimonials</h3>
-                        <div class="testimonial-box uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom uk-padding-large uk-padding-remove-vertical" uk-grid>
+                    </div>
+                    <hr class="uk-divider-vertical uk-margin-remove-vertical" uk-scrollspy-class="uk-animation-slide-bottom">
+                    <div class="testimonials-section" uk-scrollspy-class="uk-animation-slide-bottom">
+                        <h3 class="uk-margin-large-top uk-margin-medium-bottom">Testimonials</h3>
+                        <div class="testimonial-box uk-child-width-1-1 uk-child-width-1-2@m uk-margin-large-bottom uk-padding-large uk-padding-remove-vertical" uk-grid="masonry: true">
                             <figure class="uk-padding uk-padding-remove-vertical">
                                 <blockquote>
                                     <p>"Kevin has been playing drums/percussion and drum programming on my television & film soundtracks and albums for about 8 years. He has an incredible ear and a passion for music and always brings an exciting and original approach to both the recording side and the musical interpretation. He works quickly and provides wonderful recorded and produced stems in whatever format I require."</p>
                                 </blockquote>
-                                <figcaption>-Sheridan Tongue<br>Emmy winning BAFTA nominated film and television composer</figcaption>
+                                <figcaption>- Sheridan Tongue<br>Emmy winning BAFTA nominated film and television composer</figcaption>
                             </figure>
                             <img src="assets/img/sheridan_tongue_photo.jpg" alt="Sheridan Tongue">
                         </div>
-                    <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
-                        <img src="assets/img/kevin_depree_services_1.jpg" alt="Kevin DePree - Services image 1">
-                        <img src="assets/img/kevin_depree_services_2.jpg" alt="Kevin DePree - Services image 2">
                     </div>
             </section>
         </main>
+        <section>
+            <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
+                <img src="assets/img/kevin_depree_services_1.jpg" alt="Kevin DePree - Services image 1">
+                <img src="assets/img/kevin_depree_services_2.jpg" alt="Kevin DePree - Services image 2">
+            </div>
+        </section>
         <footer class="uk-background-cover bg-full uk-light uk-flex uk-flex-right uk-flex-column">
             <a class="email" href="mailto:email@kevindepree.com" target="_blank">email@kevindepree.com</a>
             <div class="social_icons uk-margin-medium-top">

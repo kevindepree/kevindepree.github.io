@@ -1,7 +1,7 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
-#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p{
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #services .credits-list, #services .live-list, figcaption{
     line-height: 1.5;
 }
 .cap{
@@ -14,17 +14,36 @@ p, a, header h2, .uk-list li{
 .uk-offcanvas-bar{
     background-color: #FFFCF5;
 }
-.uk-offcanvas-bar a{
+.uk-offcanvas-bar .uk-nav li a{
     color: black;
+    transition-property: text-decoration-color, color;
+    transition-duration: 800ms;
+    text-decoration-color: rgba(0, 0, 0, 0);
 }
-.uk-offcanvas-bar a:hover{
+.uk-offcanvas-bar .uk-nav li a:hover{
     color: black;
     text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 1);
 }
 .uk-nav li a{
     font-size: 2rem;
     margin-bottom: 25px;
     font-weight: 500;
+}
+a, .uk-light a{
+    text-decoration-color: rgba(255, 245, 100, 0);
+    transition-property: text-decoration-color, color;
+    transition-duration: 800ms;
+}
+a:hover, .uk-light a:hover{
+    text-decoration-color: rgb(255, 245, 100);
+}
+a.uk-icon{
+    color: black;
+}
+a.uk-icon:hover{
+    color: black;
+    text-decoration: none;
 }
 /* Header */
 header{
@@ -43,8 +62,8 @@ header .email{
 a.uk-navbar-toggle-icon{
     z-index: 9999;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: 30px;
     fill: white;
     background-color: rgba(0,0,0,0.2);
     padding: 15px;
@@ -114,7 +133,7 @@ input[type="submit"]:hover, input[type="submit"]:active{
     color: yellow;
 }
 .uk-light a:hover{
-    color: rgb(240, 225, 0);
+    color: rgb(255, 245, 100);
 }
 /* Services */
 #services a{
@@ -122,6 +141,7 @@ input[type="submit"]:hover, input[type="submit"]:active{
 }
 #services a:hover{
     color: rgb(0, 0, 160);
+    text-decoration-color: rgb(0, 0, 160);
 }
 .uk-divider-vertical{
     border-left: 1px solid black;
@@ -160,10 +180,10 @@ footer{
 .social_icons > div img{
     position: absolute;
     left: 0;
-    -webkit-transition: opacity .3s ease-in-out;
-    -moz-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 .social_icons > div:hover .img-hover{
     opacity: 1;
@@ -190,8 +210,8 @@ footer{
         line-height: 1.5;
     }
     a.uk-navbar-toggle-icon{
-        top: 17px;
-        right: 17px;
+        top: 20px;
+        right: 20px;
         padding: 5px;
     }
     ol.uk-nav.uk-flex.uk-flex-column.uk-flex-bottom.uk-margin-large-top.uk-margin-right{
@@ -217,9 +237,6 @@ footer{
     }
     #past_projects ul p span{
         font-size: 1rem;
-    }
-    #newsletter{
-        margin-top: 50px;
     }
     #biography .uk-grid{
         padding-right: 25px;
@@ -254,7 +271,7 @@ footer{
     #services iframe.spotify{
         width: 75%;
     }
-    #past_projects .cap, #services h3, #services .cap, #services .credits-list{
+    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .credits-list{
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -267,10 +284,6 @@ footer{
     }
     #services .live-drums .uk-list{
         padding-right: 25px;
-    }
-    #services .credits-list{
-        text-align: left;
-        align-items: flex-start;
     }
     #services .testimonial-box{
         padding-right: 25px;
@@ -290,5 +303,47 @@ footer{
     }
     .social_icons div {
         height: 20px !important;
+    }
+}
+/* 640px - 1200px */
+@media (min-width:640px) and (max-width:1199px) {
+    a.uk-navbar-toggle-icon{
+        top: 15px;
+        right: 30px;
+    }
+    #biography img{
+        padding-right: 25px;
+    }
+}
+/* up to 960px */
+@media (max-width:959px) {
+    #biography .uk-grid{
+        padding-right: 25px;
+    }
+}
+/* up to 1200px */
+@media (max-width:1199px) {
+    #newsletter{
+        margin-top: 50px;
+    }
+    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .credits-list, #services .live-list{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #services .credits-list{
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+/* 640px + */
+@media (min-width:640px) {
+    .uk-offcanvas-bar{
+        border-left: 1px solid black;
+    }
+}
+/* 1200px + */
+@media (min-width:1200px) {
+    #biography > div > div{
+        padding-bottom: 0;
     }
 }
