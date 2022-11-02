@@ -109,6 +109,7 @@ input[type="submit"] {
     border: none;
     transition: all .4s;
     outline: 0;
+    padding: 10px;
 }
 input[type="submit"]:hover, input[type="submit"]:active{
     background: white;
