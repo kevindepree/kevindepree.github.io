@@ -202,6 +202,9 @@ footer{
     a, form .uk-text-small{
         font-size: 1rem;
     }
+    footer a{
+        font-size: 1.2rem;
+    }
     header.uk-background-cover{
         background-position: 70% 50%;
     }
@@ -301,11 +304,11 @@ footer{
         font-size: 1rem;
     }
     .social_icons img {
-        height: 20px;
+        height: 24px;
         width: auto;
     }
     .social_icons div {
-        height: 20px !important;
+        height: 24px !important;
     }
 }
 /* 640px - 1200px */
