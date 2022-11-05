@@ -20,7 +20,7 @@ p, a, header h2, .uk-list li{
     transition-duration: 800ms;
     text-decoration-color: rgba(0, 0, 0, 0);
 }
-.uk-offcanvas-bar .uk-nav li a:hover{
+.uk-offcanvas-bar .uk-nav li a:hover, .uk-offcanvas-bar .uk-nav li.uk-active a{
     color: black;
     text-decoration: underline;
     text-decoration-color: rgba(0, 0, 0, 1);

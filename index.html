@@ -15,29 +15,29 @@
     <body class="uk-text-center">
         <nav id="offcanvas-flip" uk-offcanvas="flip: true;">
             <div class="uk-offcanvas-bar">
-                <ol class="uk-nav uk-flex uk-flex-column uk-flex-bottom uk-margin-large-top uk-margin-right" uk-scrollspy-nav="closest: li; scroll: true;">
+                <ol class="uk-nav uk-flex uk-flex-column uk-flex-bottom uk-margin-large-top uk-margin-right">
                     <li class="uk-active">
-                        <a href="#home">Home</a>
+                        <a href="#home" uk-scroll>Home</a>
                     </li>
                     <li>
-                        <a href="#past_projects">Past Projects</a>
+                        <a href="#past_projects" uk-scroll>Past Projects</a>
                     </li>
                     <li>
-                        <a href="#biography">Biography</a>
+                        <a href="#biography" uk-scroll>Biography</a>
                     </li>
                     <li>
-                        <a href="#latest_music">Latest Music</a>
+                        <a href="#latest_music" uk-scroll>Latest Music</a>
                     </li>
                     <li>
-                        <a href="#my_sound">My Sound</a>
+                        <a href="#my_sound" uk-scroll>My Sound</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="#services" uk-scroll>Services</a>
                     </li>
                 </ol>
             </div>
         </nav>
-        <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left">
+        <header id="home" class="uk-background-cover bg-full uk-flex uk-flex-column uk-flex-between uk-text-left scroll-target">
             <h1 class="uk-padding">Kevin DePree</h1>
             <a class="uk-navbar-toggle-animate" uk-navbar-toggle-icon="ratio: 1.5" uk-toggle="target: #offcanvas-flip" href="#"></a>
             <div>
@@ -46,7 +46,7 @@
             </div>
         </header>
         <main>
-            <section id="past_projects" class="bg-full uk-flex uk-flex-column" uk-scrollspy="cls: uk-animation-fade; target: h2, .cap; delay: 300;">
+            <section id="past_projects" class="bg-full uk-flex uk-flex-column scroll-target" uk-scrollspy="cls: uk-animation-fade; target: h2, .cap; delay: 300;">
                 <h2 class="uk-padding-large uk-padding-remove-bottom uk-margin-remove-bottom">Past Projects</h2>
                 <p class="cap">contributing live drums/percussion, drum programming, experimental percussion, & sound design</p>
                 <ul class="uk-list uk-grid uk-padding-large uk-padding-remove-vertical" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; target: li; delay: 450;">
@@ -77,7 +77,7 @@
                     </span>
                 </form>
             </section>
-            <section id="biography" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
+            <section id="biography" class="scroll-target" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Biography</h2>
                 <div class="uk-grid uk-padding-large uk-padding-remove-top" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div, >img; delay: 450;">
                     <div class="uk-width-1-1 uk-width-1-2@m uk-text-left uk-padding uk-padding-remove-top">
@@ -97,7 +97,7 @@
                     <p class="uk-margin-remove-bottom">- Kevin DePree</p>
                 </div>
             </section>
-            <section id="latest_music" class="uk-background-cover bg-full uk-light" uk-scrollspy="cls: uk-animation-fade; target: h2, .covers, h3, p, h4, ul; delay: 300; offset: 100;">
+            <section id="latest_music" class="uk-background-cover bg-full uk-light scroll-target" uk-scrollspy="cls: uk-animation-fade; target: h2, .covers, h3, p, h4, ul; delay: 300; offset: 100;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Latest Music</h2>
                     <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-width-1-2 uk-margin-auto covers" uk-grid>
                         <a href="https://open.spotify.com/album/3A5Mxz1MIHfu4zvBt9i3DM?si=JEyzbIqPSRao2mOcnFnd6g" target="_blank" class="uk-padding uk-padding-remove-vertical uk-inline">
@@ -122,7 +122,7 @@
                             <source src="assets/video/Critical_Moment.mp4">
                         </video>
             </section>
-            <section id="my_sound" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
+            <section id="my_sound" class="scroll-target" uk-scrollspy="cls: uk-animation-fade; target: h2; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">My Sound</h2>
                     <div id="my_sound_description" class="uk-padding-large uk-padding-remove-vertical uk-text-left" uk-scrollspy="cls: uk-animation-fade; target: p; delay: 300;">
                         <p>DePree is renowned for having an ear for creating cool percussive effects in his music. He achieves this by constantly pushing the boundaries of sound, experimenting with unusual items to bring originality to every score. It is his unique ability to turn these unconventional concepts into delicate percussion rhythms, combined with his trademark heartbeat of driving drums, that gives his music a truly timeless, yet contemporary dimension. Many of these unique sounds are recorded and prepared for audio samplers where DePree can recall his custom sounds at any time.</p>
@@ -176,7 +176,7 @@
                         <img src="assets/img/kevin_depree_my_sound_4.jpg" alt="Kevin DePree - My Sound image 4">
                     </div>
             </section>
-            <section id="services" class="uk-padding uk-padding-remove-vertical uk-flex uk-flex-column uk-flex-middle" uk-scrollspy="cls: uk-animation-fade; target: h2, .custom-music-section, hr, .live-drums-section, .credits-section, .testimonials-section; delay: 300;">
+            <section id="services" class="uk-padding uk-padding-remove-vertical uk-flex uk-flex-column uk-flex-middle scroll-target" uk-scrollspy="cls: uk-animation-fade; target: h2, .custom-music-section, hr, .live-drums-section, .credits-section, .testimonials-section; delay: 300;">
                 <h2 class="uk-padding-large uk-margin-remove-bottom">Services</h2>
                     <div class="custom-music-section" uk-scrollspy-class="uk-animation-slide-bottom">
                         <h3 class="uk-margin-remove-top">Custom Music</h3>
