@@ -107,14 +107,14 @@ input[type="submit"] {
     color: white;
     background: none;
     border: none;
-    transition: all .4s;
+    transition: all .6s;
     outline: 0;
     padding: 10px;
 }
 input[type="submit"]:hover, input[type="submit"]:active{
     background: white;
     color: black;
-    transition: all .4s;
+    transition: all .6s;
     cursor: pointer;
 }
 @media (min-width:1200px) {
