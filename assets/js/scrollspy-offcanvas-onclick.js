@@ -19,7 +19,7 @@ window.onscroll = () => scrollsleuth();
 window.onload = () => scrollsleuth();
 window.onresize = () => scrollsleuth();
 
-scrollsleuth = () => {
+const scrollsleuth = () => {
   const pagePosition = window.scrollY;
   scrollSections.forEach(section => {
     let sectionPosition = section.offsetTop;
