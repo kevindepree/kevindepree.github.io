@@ -15,7 +15,23 @@ for (let i = 0; i < navLinks.length; i++) {
     });
 }
 
-window.onload = (event) => {
-  scrollSections.forEach(element => console.log(element.offsetTop))
-  console.log(window.scrollY);
+window.onscroll = () => scrollsleuth();
+window.onload = () => scrollsleuth();
+window.onresize = () => scrollsleuth();
+
+scrollsleuth = () => {
+  const pagePosition = window.scrollY;
+  scrollSections.forEach(section => {
+    let sectionPosition = section.offsetTop;
+    if(pagePosition > sectionPosition - 50){
+      navLinkAnchors.forEach(anchor => {
+        let anchorIdArray = anchor.href.split("#");
+        let anchorId = anchorIdArray.at(-1);
+        if(anchorId === section.id){
+          navLinks.forEach(element => element.classList.remove("uk-active"));
+          anchor.parentElement.classList.add("uk-active");
+        }  
+      });            
+    }
+  });
 };
