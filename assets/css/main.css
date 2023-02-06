@@ -278,7 +278,7 @@ footer{
     #services iframe.spotify{
         width: 75%;
     }
-    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap{
+    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #latest_music .playlists{
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -286,8 +286,9 @@ footer{
         padding-left: 25px;
         padding-right: 25px;
     }
-    #services .live-drums{
+    #services .live-drums, #services .testimonial-playlist{
         margin: auto;
+        padding: 0;
     }
     #services .live-drums .uk-list{
         padding-right: 25px;
@@ -326,6 +327,16 @@ footer{
 @media (max-width:959px) {
     #biography .uk-grid{
         padding-right: 25px;
+    }
+    div.testimonial-box:nth-of-type(3) img{
+        order: 1;
+        display: flex;
+    }
+    div.testimonial-box:nth-of-type(3) figure{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
     }
 }
 /* up to 1200px */
