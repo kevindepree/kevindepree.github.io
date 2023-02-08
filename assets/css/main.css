@@ -1,7 +1,7 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
-#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #services .live-list, figcaption{
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #testimonials .live-list, figcaption{
     line-height: 1.5;
 }
 .cap{
@@ -136,11 +136,11 @@ input[type="submit"]:hover, input[type="submit"]:active{
 .uk-light a:hover{
     color: rgb(255, 245, 100);
 }
-/* Services */
-#services a{
+/* Testimonials */
+#testimonials a{
     color: blue;
 }
-#services a:hover{
+#testimonials a:hover{
     color: rgb(0, 0, 160);
     text-decoration-color: rgb(0, 0, 160);
 }
@@ -275,28 +275,28 @@ footer{
     #my_sound #my_sound_description{
         padding: 25px;
     }
-    #services iframe.spotify{
+    #testimonials iframe.spotify{
         width: 75%;
     }
-    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #latest_music .playlists{
+    #past_projects .cap, #latest_music .uk-list, #testimonials h3, #testimonials .cap, #latest_music .playlists{
         padding-left: 25px;
         padding-right: 25px;
     }
-    #services iframe.soundcloud{
+    #testimonials iframe.soundcloud{
         padding-left: 25px;
         padding-right: 25px;
     }
-    #services .live-drums, #services .testimonial-playlist{
+    #testimonials .live-drums, #testimonials .testimonial-playlist{
         margin: auto;
         padding: 0;
     }
-    #services .live-drums .uk-list{
+    #testimonials .live-drums .uk-list{
         padding-right: 25px;
     }
-    #services .testimonial-box{
+    #testimonials .testimonial-box{
         padding-right: 25px;
     }
-    #services .testimonial-box figure, #services .testimonial-box img{
+    #testimonials .testimonial-box figure, #testimonials .testimonial-box img{
         padding: 0;
     }
     footer.uk-background-cover{
@@ -344,7 +344,7 @@ footer{
     #newsletter{
         margin-top: 50px;
     }
-    #past_projects .cap, #latest_music .uk-list, #services h3, #services .cap, #services .live-list{
+    #past_projects .cap, #latest_music .uk-list, #testimonials h3, #testimonials .cap, #testimonials .live-list{
         padding-left: 25px;
         padding-right: 25px;
     }
