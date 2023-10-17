@@ -1,7 +1,7 @@
 p, a, header h2, .uk-list li{
     font-size: 1.5rem
 }
-#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #testimonials .live-list, figcaption{
+#past_projects ul p, #biography p, #biography_quote p, .latest-music-description, #my_sound p, #testimonials .live-list, figcaption, #taiko p{
     line-height: 1.5;
 }
 .cap{
@@ -52,11 +52,11 @@ a.uk-icon:hover{
 header{
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0) 100%), url(../img/bg/kevin_depree_landing_bg.jpg);
 }
-header h1{
+header h1, #taiko h1{
     letter-spacing: 0.025em;
     text-transform: uppercase;
 }
-header h1, header h2{
+header h1, header h2, #taiko h1{
     color: #FFFFFF;
 }
 header .email{
@@ -201,6 +201,19 @@ footer{
 .img-hover {
     opacity: 0;
 }
+/* Taiko instrument */
+#taiko{
+    background-image: url(../img/bg/kevin_depree_taiko_bg.jpg);
+}
+#taiko h1{
+    align-self: flex-start;
+}
+#taiko #download-box img{
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+    padding-top: 25px;
+}
 /* mobile */
 @media (max-width:639px) {
     a, form .uk-text-small{
@@ -212,7 +225,7 @@ footer{
     header.uk-background-cover{
         background-position: 70% 50%;
     }
-    header h1{
+    header h1, #taiko h1{
         font-size: 1.5rem;
     }
     header h2{
@@ -314,6 +327,9 @@ footer{
     }
     .social_icons div {
         height: 24px !important;
+    }
+    #taiko #download-box img{
+        max-width: 125px;
     }
 }
 /* 640px - 1200px */
