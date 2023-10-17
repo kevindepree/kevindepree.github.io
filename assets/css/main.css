@@ -7,8 +7,11 @@ p, a, header h2, .uk-list li{
 .cap{
     text-transform: capitalize;
 }
-.bg-full{
+.bg-full-home{
     min-height: 100svh;
+}
+.bg-full{
+    min-height: 100vh;
 }
 /* Nav */
 .uk-offcanvas-bar{
